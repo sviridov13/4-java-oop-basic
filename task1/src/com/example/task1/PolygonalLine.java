@@ -7,6 +7,7 @@ public class PolygonalLine {
 
     /**
      * Устанавливает точки ломаной линии
+     *
      * @param points массив точек, которыми нужно проинициализировать ломаную линию
      */
     public void setPoints(Point[] points) {
@@ -15,6 +16,7 @@ public class PolygonalLine {
 
     /**
      * Добавляет точку к ломаной линии
+     *
      * @param point точка, которую нужно добавить к ломаной
      */
     public void addPoint(Point point) {
@@ -22,11 +24,23 @@ public class PolygonalLine {
     }
 
     /**
+     * Добавляет точку к ломаной линии
+     *
+     * @param x координата по оси абсцисс
+     * @param y координата по оси ординат
+     */
+    public void addPoint(double x, double y) {
+        // TODO: реализовать
+    }
+
+    /**
      * Возвращает длину ломаной линии
+     *
      * @return длину ломаной линии
      */
     public double getLength() {
-        return 0;
+        // TODO: реализовать
+        throw new AssertionError();
     }
 
 }
