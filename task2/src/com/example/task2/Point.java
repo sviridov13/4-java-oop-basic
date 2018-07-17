@@ -1,4 +1,4 @@
-package com.example.task1;
+package com.example.task2;
 
 /**
  * Точка в двумерном пространстве

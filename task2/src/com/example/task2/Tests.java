@@ -1,4 +1,4 @@
-package com.example.task1;
+package com.example.task2;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
