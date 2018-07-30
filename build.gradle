@@ -7,6 +7,15 @@ subprojects {
                 srcDirs = ['src']
             }
         }
+        test {
+            java {
+                srcDirs = ['src']
+            }
+        }
+    }
+
+    compileJava {
+        options.encoding = "UTF-8"
     }
 
     group 'java-base'
