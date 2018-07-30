@@ -13,9 +13,8 @@ subprojects {
             }
         }
     }
-
-    compileJava {
-        options.encoding = "UTF-8"
+    tasks.withType(JavaCompile).forEach{
+        it.options.encoding = "UTF-8"
     }
 
     group 'java-base'
