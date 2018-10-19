@@ -1,7 +1,5 @@
 package com.example.task03;
 
-import java.math.*;
-
 public class ComplexNumber {
     private double real;
     private double image;
