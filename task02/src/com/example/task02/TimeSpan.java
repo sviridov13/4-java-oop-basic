@@ -36,8 +36,16 @@ public class TimeSpan {
     }
 
     public void add(TimeSpan time) {
+        if ((this.second + time.second) >= 60){
+            this.minute++;
+            this.second = this.second + time.second - 60;
+        }
+        else {
+            this.second += time.second;
+        }
+
         this.hour += time.hour;
-        if ((this.minute + time.minute) > 60){
+        if ((this.minute + time.minute) >= 60){
             this.hour++;
             this.minute = this.minute + time.minute - 60;
         }
@@ -45,13 +53,6 @@ public class TimeSpan {
             this.minute += time.minute;
         }
 
-        if ((this.second + time.second) > 60){
-            this.minute++;
-            this.second = this.second + time.second - 60;
-        }
-        else {
-            this.second += time.second;
-        }
     }
 
     public void subtract (TimeSpan time) {
@@ -65,7 +66,9 @@ public class TimeSpan {
         }
 
         if ((this.second - time.second) < 60){
-            this.minute--;
+            if (minute > 0) {
+                this.minute--;
+            }
             this.second = this.second - time.second + 60;
         }
         else {
